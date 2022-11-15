@@ -30,8 +30,8 @@ image:
   tag: 9.7.1-{{ .Values.edition }}
   pullPolicy: IfNotPresent
   # If using a private repository, the imagePullSecrets to use
-  # pullSecrets:
-  #   - name: my-repo-secret
+  pullSecrets:
+    - name: my-repo-secret
 
 # Set security context for sonarqube pod
 securityContext:
