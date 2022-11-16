@@ -84,8 +84,8 @@ ingress:
       # Different clouds or configurations might need /* as the default path
       path: /
       # For additional control over serviceName and servicePort
-      serviceName: someService
-      servicePort: somePort
+      serviceName: sonarqube-service-nodeport
+      servicePort: 9000
       # the pathType can be one of the following values: Exact|Prefix|ImplementationSpecific(default)
       # pathType: ImplementationSpecific
   annotations: {}
