@@ -77,7 +77,7 @@ nginx:
   enabled: false
 
 ingress:
-  enabled: true
+  enabled: false
   # Used to create an Ingress record.
   hosts:
     - name: sonarqube.your-org.com
