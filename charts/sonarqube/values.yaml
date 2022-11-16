@@ -92,14 +92,14 @@ ingress:
 #     alb.ingress.kubernetes.io/scheme: internet-facing
 #     alb.ingress.kubernetes.io/tags: Environment=dev,Team=test
 #     alb.ingress.kubernetes.io/load-balancer-name: cdaas-vodafoneziggo-testing
-  kubernetes.io/ingress.class: alb
+#   kubernetes.io/ingress.class: alb
   # kubernetes.io/tls-acme: "true"
   # This property allows for reports up to a certain size to be uploaded to SonarQube
   # nginx.ingress.kubernetes.io/proxy-body-size: "8m"
 
   # Set ingressClassName if kubernetes version is >= 1.18
   # Reference: https://kubernetes.io/blog/2020/04/02/improvements-to-the-ingress-api-in-kubernetes-1.18/
-  # ingressClassName: nginx
+  ingressClassName: alb
 
 # Additional labels for Ingress manifest file
   # labels:
