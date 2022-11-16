@@ -89,9 +89,9 @@ ingress:
       # the pathType can be one of the following values: Exact|Prefix|ImplementationSpecific(default)
       # pathType: ImplementationSpecific
   annotations: {}
-#     alb.ingress.kubernetes.io/scheme: internet-facing
-#     alb.ingress.kubernetes.io/tags: Environment=dev,Team=test
-#     alb.ingress.kubernetes.io/load-balancer-name: cdaas-vodafoneziggo-testing
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/tags: Environment=dev,Team=test
+    alb.ingress.kubernetes.io/load-balancer-name: cdaas-vodafoneziggo-testing
   kubernetes.io/ingress.class: alb
   # kubernetes.io/tls-acme: "true"
   # This property allows for reports up to a certain size to be uploaded to SonarQube
