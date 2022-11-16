@@ -49,9 +49,10 @@ elasticsearch:
   bootstrapChecks: true
 
 service:
-  type: ClusterIP
+  type: NodePort
   externalPort: 9000
   internalPort: 9000
+  nodePort: 30010
   labels:
   annotations: {}
   # May be used in example for internal load balancing in GCP:
@@ -80,7 +81,7 @@ ingress:
   enabled: true
   # Used to create an Ingress record.
   hosts:
-    - name: ''
+    - name: ""
       # Different clouds or configurations might need /* as the default path
       path: /
       # For additional control over serviceName and servicePort
